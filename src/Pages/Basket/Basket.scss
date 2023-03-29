@@ -1,0 +1,37 @@
+.basket {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1 1 auto;
+}
+
+.basket__title {
+  @extend %weight500 !optional;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #111111;
+  padding: 50px 0 0 0;
+}
+
+.basket__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.basket__footer>button {
+  background: #FFC85E;
+  border-radius: 79px;
+  @extend %weight700 !optional;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding: 20px 35px;
+}
+
+.basket__footer>p {
+  @extend %weight700 !optional;
+  font-size: 30px;
+  line-height: 130%;
+  color: #111111;
+}

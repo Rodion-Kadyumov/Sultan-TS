@@ -1,0 +1,131 @@
+.container {
+  width: 1360px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  .menu {
+    display: flex;
+    flex-direction: column;
+    grid-area: menu;
+    grid-column: 1/5;
+    margin-bottom: 30px;
+    h1 {
+      @extend %weight500 !optional;
+      font-size: 40px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #111111;
+      padding: 25px 0;
+    }
+    div>ul {
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      gap: 10px;
+      li {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100px;
+        height: 70px;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04);
+        border-radius: 10px;
+        padding: 0 16px;
+      }
+      li:hover {
+        background: #FFC85E;
+        box-shadow: 0 0 10px #FFC85E, 0 0 20px #FFC85E;
+        border-radius: 10px;
+        padding: 0 16px;
+      }
+    }
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    .sidebar {
+      grid-column: 1/2;
+      p {
+        @extend %weight500 !optional;
+        font-size: 16px;
+        line-height: 150%;
+        color: #111111;
+        margin-bottom: 15px;
+      }
+      ul>li {
+        @extend %weight400 !optional;
+        line-height: 150%;
+        color: #3F4E65;
+        margin-bottom: 10px;
+      }
+      li:last-child {
+        margin: 0;
+      }
+      .price {
+        margin-bottom: 30px;
+        p {
+          @extend %weight500 !optional;
+          line-height: 150%;
+          color: #3F4E65;
+        }
+        input {
+          text-align: center;
+          background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+          border-radius: 1000px;
+          width: 100px;
+          height: 23px;
+          padding: 5px 0;
+        }
+        span {
+          font-size: 14px;
+          line-height: 130%;
+          color: #3F4E65;
+          margin: 0 10px;
+        }
+      }
+      .manufacturer {
+        margin-bottom: 40px;
+        p {
+          @extend %weight500 !optional;
+          font-size: 16px;
+          line-height: 150%;
+          color: #111111;
+          margin-bottom: 15px;
+        }
+        ul>li {
+          @extend %weight400 !optional;
+          line-height: 150%;
+          color: #3F4E65;
+          margin-bottom: 5px;
+        }
+        form {
+          position: relative;
+          margin-bottom: 15px;
+          input {
+            background: #EDEDED;
+            width: 260px;
+            height: 60px;
+            border-radius: 36px;
+            padding: 20px;
+            margin-right: 35px;
+          }
+          .button {
+            position: absolute;
+            top: 10px;
+            right: 90px;
+            background: #FFC85E;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+    .catalog {
+      grid-column: 2/5;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
+}
