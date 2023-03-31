@@ -4,7 +4,7 @@ import { deleteProduct } from '../../store/reducers/basket';
 import '../Basket/ChoiceProduct.scss';
 
 type ChoisePropsType = {
-  id: any,
+  id: number,
   url: string
   weight: string
   title: string
@@ -49,7 +49,7 @@ const Choice: FC<ChoisePropsType> = ({ id, url, weight, title, price, descriptio
             <button onClick={handlePlus} className="counts">+</button>
           </div>
           <div>
-            <div className="price">{price}</div>
+            <div className="price">{price * counts}</div>
           </div>
           <div>
             <button onClick={handleDeleteCard} className="blok__btn"><img src="/images/delete_bascket.svg" /></button>

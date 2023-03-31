@@ -8,8 +8,11 @@ const Footer = () => {
         <div className='brand__footer'>
           <span className='brand'><img src="/images/sultan_footer.svg" alt="Логотип" />султан</span>
           <p>Компания «Султан» — снабжаем розничные магазины товарами "под ключ" в Кокчетаве и Акмолинской области</p>
-          <span>Подпишись на скидки и акции</span>
-          <input type="text" />
+          <form>
+            <span className='brand'>Подпишись на скидки и акции</span>
+            <input className='search' type='search' placeholder='Поиск...' />
+            <button className='search__btn'><img src='/images/search.svg' /></button>
+          </form>
         </div>
 
         <div className='footer__links'>

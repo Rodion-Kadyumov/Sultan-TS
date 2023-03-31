@@ -4,10 +4,11 @@ import { useDispatch } from "react-redux";
 import { addProduct } from "../../store/reducers/basket";
 import { v4 as uuidv4 } from "uuid";
 import HeaderMenu from "./Header";
+import { Breadcrumb } from "../Breadcrumb/Breadcrumb";
 import './Detail.scss';
 
 type DetailPropsType = {
-  id: any,
+  id: number
   url: string
   weight: string
   title: string
@@ -20,7 +21,7 @@ type DetailPropsType = {
 
 const Detail: FC<DetailPropsType> = ({ url, weight, title, code, manufacturer, brand, price, description }) => {
 
-  const card = useSelector((state: any) => state.card.card);
+  const card = useSelector((state: any ) => state.card.card);
   const dispatch = useDispatch()
 
   const handleAddCard = () => {
@@ -50,7 +51,7 @@ const Detail: FC<DetailPropsType> = ({ url, weight, title, code, manufacturer, b
   return (
     <div>
       <HeaderMenu />
-      {/* <Breadcrumb /> */}
+      <Breadcrumb />
       <div className="container container__detail">
         <div className="detail__image">
           <img src={card.url} alt={title} />

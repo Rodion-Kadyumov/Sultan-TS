@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import React, { FC } from 'react';
 import './Catalog.scss';
 
-const data: any = menu;
+const data: Array<object> = menu;
 
 const filterProduct = (searchText: string, menu: Array<any>) => {
   if(!searchText) {
@@ -14,6 +14,7 @@ const filterProduct = (searchText: string, menu: Array<any>) => {
   }
   return menu.filter(({ manufacturer }) => 
     manufacturer.toLowerCase().includes(searchText.toLowerCase()),
+    menu.filter((item, index) => menu.indexOf(item) === index)
   );
 }
 
@@ -81,14 +82,14 @@ const Catalog: FC<CatalogPropsType> = () => {
             <div className='manufacturer'>
               <p>Производитель</p>
               <form>
-                <input
+                <input className='search'
                   value={searchProd}
                   type="text"
                   autoComplete='off'
                   placeholder='Поиск...'
                   onChange={(e) => setSearchProd(e.target.value)}
                 />
-                <button><img src="/images/search.svg" /></button>
+                <button className='search__btn'><img src="/images/search.svg" /></button>
               </form>
               <ul>
                 {productList.map((product: any, index: number) => {

@@ -8,11 +8,16 @@ footer {
     .brand__footer {
       margin-right: 60px;
       span {
+        display: flex;
+        align-items: center;
         @extend %weight400 !optional;
-        font-size: 12px;
+        font-size: 18px;
         line-height: 150%;
         color: #FFFFFF;
         margin-bottom: 15px;
+        img {
+          margin-right: 20px;
+        }
       }
       p {
         @extend %weight400 !optional;
@@ -25,9 +30,32 @@ footer {
       p:last-child {
         font-size: 12px;
       }
-      input {
-        background: #FFFFFF;
-        border-radius: 36px;
+      form {
+        position: relative;
+        span {
+          @extend %weight400 !optional;
+          font-size: 12px;
+          line-height: 150%;
+          color: #FFFFFF;
+          margin-bottom: 15px;
+        }
+        .search {
+          background: #EDEDED;
+          width: 260px;
+          height: 60px;
+          border-radius: 36px;
+          padding: 20px;
+          margin-right: 35px;
+        }
+        .search__btn {
+          position: absolute;
+          top: 42px;
+          right: 50px;
+          background: #FFC85E;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+        }
       }
     }
     .footer__links {
@@ -82,6 +110,18 @@ footer {
           color: #FFFFFF;
           margin-bottom: 25px;
         }
+        div>img {
+          margin-right: 15px;
+        }
+        div>img:last-child {
+          margin: 0;
+        }
+      }
+      div>img {
+        margin-right: 15px;
+      }
+      div>img:last-child {
+        margin: 0;
       }
     }
     .footer__links:last-child {

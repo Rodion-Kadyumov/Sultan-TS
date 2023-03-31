@@ -1,6 +1,7 @@
 import ChoiceProduct from './ChoiceProduct';
 import { useSelector } from 'react-redux';
 import HeaderMenu from '../../components/blocks/Header';
+import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb';
 import Footer from '../../components/blocks/Footer';
 import '../Basket/Basket.scss';
 
@@ -12,6 +13,7 @@ const Basket = () => {
 
     <div className="basket">
       <HeaderMenu />
+      <Breadcrumb />
       <div className="container">
         <h2 className='basket__title'>Корзина</h2>
         

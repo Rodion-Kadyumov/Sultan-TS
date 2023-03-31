@@ -38,7 +38,7 @@ const Card: FC<CardPropsType> = ({ id, url, weight, title, code, manufacturer, b
   }
 
   const handleAddCard = (e: React.FormEvent<HTMLButtonElement>) => {
-    let item: any  = {
+    let item: any = {
       id: uuidv4(),
       title,
       url,
