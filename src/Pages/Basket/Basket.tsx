@@ -11,13 +11,13 @@ const Basket = () => {
 
   return (
 
-    <div className="basket">
+    <div className='basket'>
       <HeaderMenu />
       <Breadcrumb />
-      <div className="container">
+      <div className='container'>
         <h2 className='basket__title'>Корзина</h2>
         
-        <div className="basket">
+        <div className='basket'>
           {basket.map((item: any) => {
             const { id, url, weight, title, description, price } = item;
 
@@ -34,7 +34,7 @@ const Basket = () => {
             )
           })}
         </div>
-        <div className="choice__line"></div>
+        <div className='choice__line'></div>
         <div className='basket__footer'>
           <button>Оформить заказ</button>
           <p>Заказ на сумму: {finalPrice}</p>

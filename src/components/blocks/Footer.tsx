@@ -6,12 +6,12 @@ const Footer = () => {
     <footer>
       <div className='footer'>
         <div className='brand__footer'>
-          <span className='brand'><img src="/images/sultan_footer.svg" alt="Логотип" />султан</span>
-          <p>Компания «Султан» — снабжаем розничные магазины товарами "под ключ" в Кокчетаве и Акмолинской области</p>
+          <span className='brand'><img src='https://rodion-kadyumov.github.io/Sultan-TS//images/sultan_footer.svg' alt='Логотип' />султан</span>
+          <p>Компания «Султан» — снабжаем розничные магазины товарами 'под ключ' в Кокчетаве и Акмолинской области</p>
           <form>
             <span className='brand'>Подпишись на скидки и акции</span>
             <input className='search' type='search' placeholder='Поиск...' />
-            <button className='search__btn'><img src='/images/search.svg' /></button>
+            <button className='search__btn'><img src='https://rodion-kadyumov.github.io/Sultan-TS//images/search.svg' /></button>
           </form>
         </div>
 
@@ -38,12 +38,12 @@ const Footer = () => {
 
         <div className='footer__links'>
           <p>Скачать прайс-лист:</p>
-          <a className='footer__btn' href="#">Прайс-лист <img src="/images/download.svg" /></a>
-          <div className="network">
+          <a className='footer__btn' href='#'>Прайс-лист <img src='https://rodion-kadyumov.github.io/Sultan-TS/images/download.svg' /></a>
+          <div className='network'>
             <span>Связь в мессенджерах:</span>
             <div>
-              <img src="/images/watsapp.png" alt="Ватсап" />
-              <img src="/images/telegram.png" alt="Телеграмм" />
+              <img src='https://rodion-kadyumov.github.io/Sultan-TS/images/watsapp.png' alt='Ватсап' />
+              <img src='https://rodion-kadyumov.github.io/Sultan-TS/images/telegram.png' alt='Телеграмм' />
             </div>
           </div>
         </div>
@@ -52,13 +52,13 @@ const Footer = () => {
           <p>Контакты:</p>
           <a href='77774900091'>+7 (777) 490-00-91</a>
           <span>время работы: 9:00-20:00</span>
-          <a href="#">Заказать звонок</a>
+          <a href='#'>Заказать звонок</a>
           <p>
-            <img src="/images/mail.svg" alt="Почта" /> opt.sultan@mail.ru <span>На связи в любое время</span>
+            <img src='https://rodion-kadyumov.github.io/Sultan-TS//images/mail.svg' alt='Почта' /> opt.sultan@mail.ru <span>На связи в любое время</span>
           </p>
           <div>
-            <img src="/images/visa.png" alt="Виза" />
-            <img src="/images/master_card.png" alt="Мастер кард" />
+            <img src='https://rodion-kadyumov.github.io/Sultan-TS//images/visa.png' alt='Виза' />
+            <img src='https://rodion-kadyumov.github.io/Sultan-TS//images/master_card.png' alt='Мастер кард' />
           </div>
         </div>
       </div>

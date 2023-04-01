@@ -44,9 +44,9 @@ const Catalog: FC<CatalogPropsType> = () => {
   }, [searchProd]);
   
   return (
-    <main className="main">
+    <main className='main'>
       <HeaderMenu />
-      <div className="container">
+      <div className='container'>
         <div className='menu'>
           <h1>Косметика и гигиена</h1>
           <div>
@@ -65,7 +65,7 @@ const Catalog: FC<CatalogPropsType> = () => {
               <p>Цена ₸</p>
               <input
                 // value={searchProd}
-                type="text"
+                type='text'
                 autoComplete='off'
                 placeholder='0' 
                 // onChange={(e) => setSearchProd(e.target.value)}
@@ -73,7 +73,7 @@ const Catalog: FC<CatalogPropsType> = () => {
               <span>-</span>
               <input
                 // value={searchProd}
-                type="text"
+                type='text'
                 autoComplete='off'
                 placeholder='1000' 
                 // onChange={(e) => setSearchProd(e.target.value)}
@@ -84,12 +84,12 @@ const Catalog: FC<CatalogPropsType> = () => {
               <form>
                 <input className='search'
                   value={searchProd}
-                  type="text"
+                  type='text'
                   autoComplete='off'
                   placeholder='Поиск...'
                   onChange={(e) => setSearchProd(e.target.value)}
                 />
-                <button className='search__btn'><img src="/images/search.svg" /></button>
+                <button className='search__btn'><img src='https://rodion-kadyumov.github.io/Sultan-TS/images/search.svg' /></button>
               </form>
               <ul>
                 {productList.map((product: any, index: number) => {
@@ -105,7 +105,7 @@ const Catalog: FC<CatalogPropsType> = () => {
             </ul>
           </aside>
 
-          <div className="catalog">
+          <div className='catalog'>
             {productList.map((totality: any) => {
 
               const { id, url, weight, title, code, manufacturer, brand, price, description } = totality

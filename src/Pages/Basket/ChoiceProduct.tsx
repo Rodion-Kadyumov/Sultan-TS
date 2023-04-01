@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState } from 'react';
 import { useDispatch} from 'react-redux';
 import { deleteProduct } from '../../store/reducers/basket';
 import '../Basket/ChoiceProduct.scss';
@@ -31,28 +31,28 @@ const Choice: FC<ChoisePropsType> = ({ id, url, weight, title, price, descriptio
   }
   return (
     <div >
-      <div className="choice__line"></div>
-      <div className="choice">
+      <div className='choice__line'></div>
+      <div className='choice'>
         <div className='blok__left'>
-          <img className="choice__image" src={url} alt={title}/>
+          <img className='choice__image' src={url} alt={title}/>
           <div>
             <span>{weight}</span>
-            <p className="choice__title">{title}</p>
+            <p className='choice__title'>{title}</p>
             <span>{description}</span>
           </div>
         </div>
 
-        <div className="blok__right">
-          <div className="block__count">
-            <button onClick={handleMinus} className="counts">-</button>
+        <div className='blok__right'>
+          <div className='block__count'>
+            <button onClick={handleMinus} className='counts'>-</button>
             <div>{counts}</div>
-            <button onClick={handlePlus} className="counts">+</button>
+            <button onClick={handlePlus} className='counts'>+</button>
           </div>
           <div>
-            <div className="price">{price * counts}</div>
+            <div className='price'>{price * counts}</div>
           </div>
           <div>
-            <button onClick={handleDeleteCard} className="blok__btn"><img src="/images/delete_bascket.svg" /></button>
+            <button onClick={handleDeleteCard} className='blok__btn'><img src='https://rodion-kadyumov.github.io/Sultan-TS/images/delete_bascket.svg' /></button>
           </div>
         </div>
       </div>

@@ -37,11 +37,6 @@ header {
         margin: 0;
       }
     }
-    .line {
-      max-width: 1920px;
-      border: solid 1px #3F4E65;
-      opacity: 0.2;
-    }
   }
   .company {
     display: flex;
@@ -154,4 +149,9 @@ header {
       }
     }
   }
+  .line {
+      max-width: 1920px;
+      border: solid 1px #3F4E65;
+      opacity: 0.2;
+    }
 }

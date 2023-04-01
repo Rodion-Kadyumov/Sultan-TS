@@ -51,9 +51,9 @@ const Card: FC<CardPropsType> = ({ id, url, weight, title, code, manufacturer, b
   };
 
   return (
-      <div className="card">
+      <div className='card'>
         <Link to={`/basket/${id}`} onClick={handleClickCard}>
-          <img className="card__preview" src={url} alt={title} />
+          <img className='card__preview' src={url} alt={title} />
         </Link>
         <div className='card__data'>
           <p>{weight}</p>
@@ -63,9 +63,9 @@ const Card: FC<CardPropsType> = ({ id, url, weight, title, code, manufacturer, b
           <p>{brand}</p>
         </div>
         <div className='card__footer'>
-          <span className="card__price">{price} ₸</span>
+          <span className='card__price'>{price} ₸</span>
           <button onClick={handleAddCard}>
-          В корзину <img src="/images/bascket_btn.svg" alt="Корзина" />
+          В корзину <img src='https://rodion-kadyumov.github.io/Sultan-TS//images/bascket_btn.svg' alt='Корзина' />
           </button>
         </div>
       </div>

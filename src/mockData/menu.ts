@@ -1,7 +1,7 @@
 export const menu = [  
   {
     id: 1,
-    url: "/images/aos.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/aos.png",
     weight: "450 мл",
     title:"AOS средство для мытья посуды Crystal",
     code: "Штрихкод: 4604049097548",
@@ -13,7 +13,7 @@ export const menu = [
   },
   {
     id: 2,
-    url: "/images/ariel.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/ariel.png",
     weight: "15X28.8 г.",
     title: "ARIEL Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
     code: "Штрихкод: 4604049097548",
@@ -25,7 +25,7 @@ export const menu = [
   },
   {
     id: 3,
-    url: "/images/bi-max.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/bi-max.png",
     weight: "1500 г",
     title: "BIMAX Порошок стиральный Автомат 100 пятен COMPACT",
     code: "Штрихкод: 4604049097548",
@@ -37,7 +37,7 @@ export const menu = [
   },
   {
     id: 4,
-    url: "/images/sorti.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/sorti.png",
     weight: "450 мл",
     title:"SORTI средство для мытья посуды Crystal",
     code: "Штрихкод: 4604049097548",
@@ -49,7 +49,7 @@ export const menu = [
   },
   {
     id: 5,
-    url: "/images/bioMio.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/bioMio.png",
     weight: "90 г.",
     title: "BioMio BIO-SOAP Экологичное туалетное мыло. Литсея и бергамот",
     code: "Штрихкод: 4604049097548",
@@ -61,7 +61,7 @@ export const menu = [
   },
   {
     id: 6,
-    url: "/images/shampoo.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/shampoo.png",
     weight: "450 мл",
     title:"Шампунь для всех типов волос",
     code: "Штрихкод: 4604049097548",
@@ -73,7 +73,7 @@ export const menu = [
   },
   {
     id: 7,
-    url: "/images/gel.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/gel.png",
     weight: "15X28.8 г.",
     title: "Гель для душа",
     code: "Штрихкод: 4604049097548",
@@ -85,7 +85,7 @@ export const menu = [
   },
   {
     id: 8,
-    url: "/images/boro.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/boro.png",
     weight: "1500 г",
     title: "Boro plus крем для рук",
     code: "Штрихкод: 4604049097548",
@@ -97,7 +97,7 @@ export const menu = [
   },
   {
     id: 9,
-    url: "/images/foot.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/foot.png",
     weight: "450 мл",
     title:"Крем для ног",
     code: "Штрихкод: 4604049097548",
@@ -109,7 +109,7 @@ export const menu = [
   },
   {
     id: 10,
-    url: "/images/face.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/face.png",
     weight: "90 г.",
     title: "Крем для лица",
     code: "Штрихкод: 4604049097548",
@@ -121,7 +121,7 @@ export const menu = [
   },
   {
     id: 11,
-    url: "/images/sun.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/sun.png",
     weight: "450 мл",
     title:"Средство для загара",
     code: "Штрихкод: 4604049097548",
@@ -133,7 +133,7 @@ export const menu = [
   },
   {
     id: 12,
-    url: "/images/shave.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/shave.png",
     weight: "15X28.8 г.",
     title: "Крем для бритья",
     code: "Штрихкод: 4604049097548",
@@ -145,7 +145,7 @@ export const menu = [
   },
   {
     id: 13,
-    url: "/images/gift.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/gift.png",
     weight: "1500 г",
     title: "Подарочный набор для женщин",
     code: "Штрихкод: 4604049097548",
@@ -157,7 +157,7 @@ export const menu = [
   },
   {
     id: 14,
-    url: "/images/splat.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/splat.png",
     weight: "450 мл",
     title:"Зубная паста",
     code: "Штрихкод: 4604049097548",
@@ -169,7 +169,7 @@ export const menu = [
   },
   {
     id: 15,
-    url: "/images/paper.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/paper.png",
     weight: "90 г.",
     title: "Туалетная бумага",
     code: "Штрихкод: 4604049097548",
@@ -181,7 +181,7 @@ export const menu = [
   },
   {
     id: 16,
-    url: "/images/mustang.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/mustang.png",
     weight: "90 г.",
     title: "Расчёстка для волос",
     code: "Штрихкод: 4604049097548",
@@ -193,7 +193,7 @@ export const menu = [
   },
   {
     id: 17,
-    url: "/images/boker.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/boker.png",
     weight: "90 г.",
     title: "Опасная бритва",
     code: "Штрихкод: 4604049097548",
@@ -205,7 +205,7 @@ export const menu = [
   },
   {
     id: 18,
-    url: "/images/colgate.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/colgate.png",
     weight: "90 г.",
     title: "Зубная паста",
     code: "Штрихкод: 4604049097548",
@@ -217,7 +217,7 @@ export const menu = [
   },
   {
     id: 19,
-    url: "/images/colgatesh.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/colgatesh.png",
     weight: "90 г.",
     title: "Зубная щётка",
     code: "Штрихкод: 4604049097548",
@@ -229,7 +229,7 @@ export const menu = [
   },
   {
     id: 20,
-    url: "/images/desodorant.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/desodorant.png",
     weight: "90 г.",
     title: "Дезодорант для мужчин",
     code: "Штрихкод: 4604049097548",
@@ -241,7 +241,7 @@ export const menu = [
   },
   {
     id: 21,
-    url: "/images/unis.png",
+    url: "https://rodion-kadyumov.github.io/Sultan-TS/images/unis.png",
     weight: "90 г.",
     title: "Салфетки гигиенические, влажные",
     code: "Штрихкод: 4604049097548",

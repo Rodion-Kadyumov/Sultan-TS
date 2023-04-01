@@ -1,10 +1,10 @@
-import React, { FC, useState } from "react";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { addProduct } from "../../store/reducers/basket";
-import { v4 as uuidv4 } from "uuid";
-import HeaderMenu from "./Header";
-import { Breadcrumb } from "../Breadcrumb/Breadcrumb";
+import React, { FC, useState } from 'react';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { addProduct } from '../../store/reducers/basket';
+import { v4 as uuidv4 } from 'uuid';
+import HeaderMenu from './Header';
+import { Breadcrumb } from '../Breadcrumb/Breadcrumb';
 import './Detail.scss';
 
 type DetailPropsType = {
@@ -52,35 +52,35 @@ const Detail: FC<DetailPropsType> = ({ url, weight, title, code, manufacturer, b
     <div>
       <HeaderMenu />
       <Breadcrumb />
-      <div className="container container__detail">
-        <div className="detail__image">
+      <div className='container container__detail'>
+        <div className='detail__image'>
           <img src={card.url} alt={title} />
         </div>
-        <div className="detail__right">
-          <div className="detail__information">
+        <div className='detail__right'>
+          <div className='detail__information'>
             <h2>{card.title}</h2>
             <span>{card.weight}</span>
           </div>
-          <div className="detail__info">
+          <div className='detail__info'>
             <p>{card.price * counts} ₸</p>
-            <button onClick={handleMinus} className="counts">-</button>
-            <div className="count">{counts}</div>
-            <button onClick={handlePlus} className="counts">+</button>
-            <button onClick={handleAddCard} className="detail-btn">В корзину <img src="/images/bascket_btn.svg" /></button>
+            <button onClick={handleMinus} className='counts'>-</button>
+            <div className='count'>{counts}</div>
+            <button onClick={handlePlus} className='counts'>+</button>
+            <button onClick={handleAddCard} className='detail-btn'>В корзину <img src='https://rodion-kadyumov.github.io/Sultan-TS//images/bascket_btn.svg' /></button>
           </div>
-          <div className="detail__links">
+          <div className='detail__links'>
             <div>
-              <img src="/images/send.svg" alt="Поделиться" />
+              <img src='https://rodion-kadyumov.github.io/Sultan-TS//images/send.svg' alt='Поделиться' />
             </div>
             <div>
               <p>При покупке от 10 000 ₸ бесплатная <br />
                 доставка по Кокчетаву и области</p>
             </div>
             <div>
-              <p>Прайс-лист <img src="/images/save.svg" alt="Отправить" /></p>
+              <p>Прайс-лист <img src='https://rodion-kadyumov.github.io/Sultan-TS//images/save.svg' alt='Отправить' /></p>
             </div>
           </div>
-          <div className="detail__data">
+          <div className='detail__data'>
             <p>{card.manufacturer}</p>
             <p>{card.brand}</p>
             <p>{card.code}</p>

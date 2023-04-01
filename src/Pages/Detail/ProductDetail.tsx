@@ -1,14 +1,14 @@
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux';
 import React, { FC } from 'react';
-import Detail from "../../components/blocks/Detail";
+import Detail from '../../components/blocks/Detail';
 
 const ProductDetail: FC = () => {
 
   const detailProduct = useSelector((state: any) => state.card.card)
 
   return(
-    <div className="product">
-      <div className="detail">
+    <div className='product'>
+      <div className='detail'>
         <Detail
           id={detailProduct.id}
           url={detailProduct.url}
