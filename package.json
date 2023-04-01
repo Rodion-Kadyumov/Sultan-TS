@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://rodion-kadyumov.github.io/Sultan-TS/",
+  "homepage": "https://rodion-kadyumov.github.io/Sultan-TS",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
