@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Sultan-TS/static/css/main.2cba0c46.css",
-    "main.js": "/Sultan-TS/static/js/main.ce4b3039.js",
+    "main.css": "/Sultan-TS/static/css/main.efbea7c4.css",
+    "main.js": "/Sultan-TS/static/js/main.25ba2228.js",
     "static/js/787.28cb0dcd.chunk.js": "/Sultan-TS/static/js/787.28cb0dcd.chunk.js",
     "static/media/bascet.svg": "/Sultan-TS/static/media/bascet.994dac85d8448df9d56b.svg",
     "index.html": "/Sultan-TS/index.html",
-    "main.2cba0c46.css.map": "/Sultan-TS/static/css/main.2cba0c46.css.map",
-    "main.ce4b3039.js.map": "/Sultan-TS/static/js/main.ce4b3039.js.map",
+    "main.efbea7c4.css.map": "/Sultan-TS/static/css/main.efbea7c4.css.map",
+    "main.25ba2228.js.map": "/Sultan-TS/static/js/main.25ba2228.js.map",
     "787.28cb0dcd.chunk.js.map": "/Sultan-TS/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cba0c46.css",
-    "static/js/main.ce4b3039.js"
+    "static/css/main.efbea7c4.css",
+    "static/js/main.25ba2228.js"
   ]
 }
