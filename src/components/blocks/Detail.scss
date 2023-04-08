@@ -1,10 +1,16 @@
 .container__detail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 360px) {
+    max-width: 360px;
+  }
   .detail__image>img {
     mix-blend-mode: multiply;
     height: 470px;
     width: auto;
+    @media screen and (max-width: 360px) {
+      height: 150px;
+    }
   }
   .detail__right {
     display: flex;
@@ -15,6 +21,9 @@
         @extend %weight800 !optional;
         line-height: 150%;
         color: #111111;
+        @media screen and (max-width: 360px) {
+          width: 150px;
+        }
       }
       span {
         @extend %weight400 !optional;
@@ -27,11 +36,18 @@
       display: flex;
       align-items: center;
       margin-bottom: 30px;
+      @media screen and (max-width: 360px) {
+        width: 260px;
+        flex-wrap: wrap;
+      }
       p {
         @extend %weight800 !optional;
         line-height: 130%;
         color: #111111;
         margin-right: 40px;
+        @media screen and (max-width: 360px) {
+          margin-right: 10px;
+        }
       }
       .counts {
         width: 34px;
@@ -44,6 +60,9 @@
         line-height: 130%;
         color: #3F4E65;
         margin: 0 20px;
+        @media screen and (max-width: 360px) {
+          margin: 10px;
+        }
       }
       .detail-btn {
         display: flex;
@@ -55,6 +74,9 @@
         color: #FFFFFF;
         padding: 20px 40px;
         margin-left: 40px;
+        @media screen and (max-width: 360px) {
+          margin: 0px;
+        }
         img {
           margin-left: 5px;
         }
@@ -63,6 +85,11 @@
     .detail__links {
       display: flex;
       margin-bottom: 35px;
+      @media screen and (max-width: 360px) {
+        flex-wrap: wrap;
+        width: 360px;
+        margin-left: -150px;
+      }
       div {
         display: flex;
         align-items: center;
@@ -70,11 +97,30 @@
         padding: 20px 35px;
         background-color: #FFFFFF;
         margin-right: 10px;
+        @media screen and (max-width: 360px) {
+          margin-bottom: 10px;
+          padding: 10px 15px;
+        }
       }
       p {
         @extend %weight300 !optional;
         line-height: 150%;
         color: #3F4E65;
+        @media screen and (max-width: 360px) {
+          width: 300px;
+        }
+      }
+    }
+    .detail__data {
+      @media screen and (max-width: 360px) {
+        width: 300px;
+        margin-left: -150px;
+      }
+      p {
+        @media screen and (max-width: 360px) {
+          margin-bottom: 10px;
+        }
+        
       }
     }
   }

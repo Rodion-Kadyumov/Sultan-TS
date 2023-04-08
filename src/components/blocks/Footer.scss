@@ -1,10 +1,19 @@
 footer {
   background: #3F4E65;
+  @media screen and (max-width: 360px) {
+    max-width: 360px;
+  }
   .footer {
     display: flex; 
     width: 1360px;
     padding: 70px 0;
     margin: 0 auto;
+    @media screen and (max-width: 360px) {
+      max-width: 360px;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      padding: 15px;
+    }
     .brand__footer {
       margin-right: 60px;
       span {
@@ -26,6 +35,10 @@ footer {
         color: #FFFFFF;
         width: 220px;
         margin-bottom: 45px;
+        @media screen and (max-width: 360px) {
+          width: 320px;
+          margin-bottom: 15px;
+        }
       }
       p:last-child {
         font-size: 12px;
@@ -46,6 +59,9 @@ footer {
           border-radius: 36px;
           padding: 20px;
           margin-right: 35px;
+          @media screen and (max-width: 360px) {
+            width: 300px;
+          }
         }
         .search__btn {
           position: absolute;
@@ -55,6 +71,9 @@ footer {
           border-radius: 50%;
           width: 40px;
           height: 40px;
+          @media screen and (max-width: 360px) {
+            right: 50px;
+          }
         }
       }
     }
@@ -63,6 +82,9 @@ footer {
       flex-direction: column;
       width: 240px;
       margin-right: 60px;
+      @media screen and (max-width: 360px) {
+        display: none;
+      }
       p {
         @extend %weight600 !optional;
         font-size: 20px;
@@ -70,11 +92,21 @@ footer {
         color: #FFFFFF;
         margin-bottom: 15px;
       }
+      ul {
+        @media screen and (max-width: 360px) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: start;
+        }
+      }
       ul>li {
         @extend %weight400 !optional;
         line-height: 150%;
         color: #FFFFFF;
         margin-bottom: 15px;
+        @media screen and (max-width: 360px) {
+          margin-right: 5px;
+        }
       }
       a {
         @extend %weight600 !optional;
@@ -97,8 +129,14 @@ footer {
         color: #FFFFFF;
         padding: 20px 40px;
         margin-bottom: 20px;
+        @media screen and (max-width: 360px) {
+          justify-content: center;
+        }
         img {
           margin-left: 15px;
+        }
+        @media screen and (max-width: 360px) {
+          width: 300px;
         }
       }
       .network {
@@ -126,6 +164,9 @@ footer {
     }
     .footer__links:last-child {
       margin: 0;
+    }
+    .footer__links_mob {
+      display: block;
     }
   }
 }

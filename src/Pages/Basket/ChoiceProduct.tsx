@@ -1,16 +1,8 @@
 import React, { FC, useState } from 'react';
 import { useDispatch} from 'react-redux';
+import { ChoisePropsType } from '../../components/assets/types';
 import { deleteProduct } from '../../store/reducers/basket';
 import '../Basket/ChoiceProduct.scss';
-
-type ChoisePropsType = {
-  id: number,
-  url: string
-  weight: string
-  title: string
-  description:string
-  price: number
-}
 
 const Choice: FC<ChoisePropsType> = ({ id, url, weight, title, price, description }) => {
 

@@ -2,6 +2,9 @@
   width: 1360px;
   margin: 0 auto;
   padding-bottom: 80px;
+  @media screen and (max-width: 360px) {
+    max-width: 360px;
+  }
   .menu {
     display: flex;
     flex-direction: column;
@@ -15,6 +18,10 @@
       text-transform: uppercase;
       color: #111111;
       padding: 25px 0;
+      @media screen and (max-width: 360px) {
+        font-size: 20px;
+        padding: 15px 0;
+      }
     }
     div>ul {
       display: grid;
@@ -38,11 +45,18 @@
         border-radius: 10px;
         padding: 0 16px;
       }
+      @media screen and (max-width: 360px) {
+        display: none;
+      }
     }
   }
   .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    @media screen and (max-width: 360px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
     .sidebar {
       grid-column: 1/2;
       p {
@@ -97,7 +111,29 @@
           line-height: 150%;
           color: #3F4E65;
           margin-bottom: 5px;
+          @media screen and (max-width: 360px) {
+            display: none;
+          }
         }
+
+        .list>li:nth-child(n+5) {
+          display: none;
+        }
+        
+        .active>li:nth-child(n+5) {
+          display: block;
+        }
+      
+        .show_hide_list {
+          cursor:pointer;
+          background: #FFC85E;
+          border-radius: 80px;
+          padding: 16px 25px;
+          display:inline-block;
+          text-align:center;
+          padding:10px;
+        }
+
         form {
           position: relative;
           margin-bottom: 20px;
@@ -118,14 +154,45 @@
             width: 40px;
             height: 40px;
           }
+          @media screen and (max-width: 360px) {
+            display: none;
+          }
         }
       }
+      ul>li {
+          @extend %weight400 !optional;
+          line-height: 150%;
+          color: #3F4E65;
+          margin-bottom: 5px;
+          @media screen and (max-width: 360px) {
+            display: none;
+          }
+        }
+        .body>li:nth-child(n+5) {
+          display: none;
+        }
+        .actives>li:nth-child(n+5) {
+          display: block;
+        }
+        .show_hide_lists {
+          cursor:pointer;
+          background: #FFC85E;
+          border-radius: 80px;
+          padding: 16px 25px;
+          display:inline-block;
+          text-align:center;
+          padding:10px;
+        }
     }
     .catalog {
       grid-column: 2/5;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
+      @media screen and (max-width: 360px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
   }
 }

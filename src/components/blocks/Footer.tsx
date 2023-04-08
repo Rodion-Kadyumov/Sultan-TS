@@ -36,7 +36,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className='footer__links'>
+        <div className='footer__links footer__links_mob'>
           <p>Скачать прайс-лист:</p>
           <a className='footer__btn' href='#'>Прайс-лист <img src='https://rodion-kadyumov.github.io/Sultan-TS/images/download.svg' /></a>
           <div className='network'>
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className='footer__links'>
+        <div className='footer__links footer__links_mob'>
           <p>Контакты:</p>
           <a href='77774900091'>+7 (777) 490-00-91</a>
           <span>время работы: 9:00-20:00</span>

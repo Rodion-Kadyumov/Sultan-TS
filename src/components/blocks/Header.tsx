@@ -47,10 +47,12 @@ const HeaderMenu = () => {
           <img src='https://rodion-kadyumov.github.io/Sultan-TS//images/callback.png' alt='Обратный звонок' />
         </div>
         <a className='btn btn__save' href='#'>Прайс-лист <img src='https://rodion-kadyumov.github.io/Sultan-TS//images/download.svg' /></a>
-        <Link to={'/basket'} className='header__btn'>
-          <svg width='50' height='27' xmlns='http://www.w3.org/2000/svg'></svg><span>{SumCount}</span>
-        </Link>
-          <p>Корзина <br /> {finalPrice}₸</p>
+        <div className='basket'>
+          <Link to={'/basket'} className='header__btn'>
+            <svg width='50' height='27' xmlns='http://www.w3.org/2000/svg'></svg><span>{SumCount}</span>
+          </Link>
+          <p>Корзина<br />{finalPrice} ₸</p>
+        </div>
       </div>
       <div className='line'></div>
     </header>

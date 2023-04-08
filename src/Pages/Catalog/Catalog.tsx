@@ -2,8 +2,10 @@ import Card from '../../components/Cards/Card';
 import HeaderMenu from '../../components/blocks/Header';
 import Footer from '../../components/blocks/Footer'
 import { menu } from '../../mockData/menu';
+import Pagination from '../../components/Pagination/Pagination';
+import { CatalogPropsType } from '../../components/assets/types';
 import { useEffect, useState } from 'react';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import './Catalog.scss';
 
 const data: Array<object> = menu;
@@ -14,26 +16,24 @@ const filterProduct = (searchText: string, menu: Array<any>) => {
   }
   return menu.filter(({ manufacturer }) => 
     manufacturer.toLowerCase().includes(searchText.toLowerCase()),
-    menu.filter((item, index) => menu.indexOf(item) === index)
   );
 }
 
-type CatalogPropsType = {
-  id?: number
-  url?: string
-  weight?: string
-  title?: string
-  code?: number
-  manufacturer?:string
-  brand?: string
-  price?: number
-  description?:string
-}
+  const ul = document.querySelectorAll('.list')[0]
+  document.querySelector('.show_hide_list')?.addEventListener ('click', () => {
+    ul.classList.toggle('active');
+  })
+  const uls = document.querySelectorAll('.list')[1]
+  document.querySelector('.show_hide_lists')?.addEventListener ('click', () => {
+    uls.classList.toggle('actives');
+  })
 
 const Catalog: FC<CatalogPropsType> = () => {
   
   const [productList, setProductList] = useState(data);
   const [searchProd, setSearchProd] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const lastPage = 3;
 
   useEffect(() => {
     const Debounce = setTimeout(() => {
@@ -91,18 +91,20 @@ const Catalog: FC<CatalogPropsType> = () => {
                 />
                 <button className='search__btn'><img src='https://rodion-kadyumov.github.io/Sultan-TS/images/search.svg' /></button>
               </form>
-              <ul>
+              <ul className="list active">
                 {productList.map((product: any, index: number) => {
                   return <li key={index}>{product.manufacturer}</li>
                 })}
               </ul>
+              <div className="show_hide_list">Смотреть все</div>
             </div>
             <p>Уход за телом</p>
-            <ul>
+            <ul className="body actives">
               {productList.map((product: any, elem: number) => {
                 return <li key={elem}>{product.for}</li>
               })}
             </ul>
+            <div className="show_hide_lists">Смотреть все</div>
           </aside>
 
           <div className='catalog'>
@@ -125,6 +127,12 @@ const Catalog: FC<CatalogPropsType> = () => {
                 />
               );
             })}
+            <Pagination
+              currentPage={currentPage}
+              lastPage={lastPage}
+              maxLength={7}
+              setCurrentPage={setCurrentPage}
+            />
           </div>
         </div>
       </div>

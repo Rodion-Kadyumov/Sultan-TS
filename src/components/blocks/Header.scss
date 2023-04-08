@@ -37,6 +37,9 @@ header {
         margin: 0;
       }
     }
+    @media screen and (max-width: 360px) {
+      display: none;
+    }
   }
   .company {
     display: flex;
@@ -44,6 +47,10 @@ header {
     width: 1360px;
     margin: 0 auto;
     padding: 25px 0;
+    @media screen and (max-width: 360px) {
+      max-width: 360px;
+      flex-wrap: wrap;
+    }
     .brand {
       display: flex;
       align-items: center;
@@ -67,9 +74,16 @@ header {
       img {
         margin-left: 20px;
       }
+      @media screen and (max-width: 360px) {
+        width: 320px;
+        margin: 10px 0;
+      }
     }
     form {
       position: relative;
+      @media screen and (max-width: 360px) {
+        margin-bottom: 20px;
+      }
       .search {
         background: #EDEDED;
         width: 260px;
@@ -77,6 +91,10 @@ header {
         border-radius: 36px;
         padding: 20px;
         margin-right: 35px;
+        @media screen and (max-width: 360px) {
+          width: 320px;
+          margin: 0px;
+        }
       }
       .search__btn {
         position: absolute;
@@ -86,6 +104,9 @@ header {
         border-radius: 50%;
         width: 40px;
         height: 40px;
+        @media screen and (max-width: 360px) {
+          right:20px;
+        }
       }
     }
     .block {
@@ -116,16 +137,29 @@ header {
           padding: 5px 0;
         }
       }
+      @media screen and (max-width: 360px) {
+        display: none;
+      }
     }
     .btn__save {
       margin-right: 50px;
+      @media screen and (max-width: 360px) {
+        display: none;
+      }
     }
     .header__btn {
       position: relative;
       background-image: url(../../../public/images/bascet.svg);
       background-repeat: no-repeat;
       margin-right: 30px;
-      span {
+    }
+    .basket {
+        display: flex;
+        flex-direction: row;
+        img {
+          margin-right: 30px;
+        }
+        span {
         position: absolute;
         top: 0;
         right: 0;
@@ -140,18 +174,11 @@ header {
         line-height: 17px;
         color: #FFFFFF;
       }
-      .bascet {
-        display: flex;
-        align-items: center;
-        img {
-          margin-right: 30px;
-        }
       }
-    }
   }
   .line {
       max-width: 1920px;
       border: solid 1px #3F4E65;
       opacity: 0.2;
-    }
+  }
 }

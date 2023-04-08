@@ -1,23 +1,12 @@
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../../store/reducers/basket';
+import { DetailPropsType } from '../assets/types';
 import { v4 as uuidv4 } from 'uuid';
 import HeaderMenu from './Header';
 import { Breadcrumb } from '../Breadcrumb/Breadcrumb';
 import './Detail.scss';
-
-type DetailPropsType = {
-  id: number
-  url: string
-  weight: string
-  title: string
-  code: number
-  manufacturer:string
-  brand: string
-  price: number
-  description:string
-}
 
 const Detail: FC<DetailPropsType> = ({ url, weight, title, code, manufacturer, brand, price, description }) => {
 
@@ -84,9 +73,10 @@ const Detail: FC<DetailPropsType> = ({ url, weight, title, code, manufacturer, b
             <p>{card.manufacturer}</p>
             <p>{card.brand}</p>
             <p>{card.code}</p>
+            <p>{card.description}</p>
           </div>
           <div>
-            <p>{card.description}</p>
+            
           </div>
         </div>
       </div>

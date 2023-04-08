@@ -3,20 +3,9 @@ import React, { FC } from 'react';
 import { addProduct } from '../../store/reducers/basket';
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
+import { CardPropsType } from '../assets/types';
 import { detailProduct } from '../../store/reducers/fullCard';
 import './Card.scss';
-
-type CardPropsType = {
-  id: number
-  url: string
-  weight: string
-  title: string
-  code: number
-  manufacturer:string
-  brand: string
-  price: number
-  description:string
-}
 
 const Card: FC<CardPropsType> = ({ id, url, weight, title, code, manufacturer, brand, price, description }) => {
 
