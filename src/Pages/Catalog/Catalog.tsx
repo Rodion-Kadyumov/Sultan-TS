@@ -20,12 +20,12 @@ const filterProduct = (searchText: string, menu: Array<any>) => {
 }
 
   const ul = document.querySelectorAll('.list')[0]
-  document.querySelector('.show_hide_list')?.addEventListener ('click', () => {
-    ul.classList.toggle('active');
+  document.querySelector('.manufacturer__btn')?.addEventListener ('click', () => {
+    ul.classList.toggle('.active');
   })
-  const uls = document.querySelectorAll('.list')[1]
-  document.querySelector('.show_hide_lists')?.addEventListener ('click', () => {
-    uls.classList.toggle('actives');
+  const uls = document.querySelectorAll('.care')[1]
+  document.querySelector('.care__btn')?.addEventListener ('click', () => {
+    uls.classList.toggle('.actives');
   })
 
 const Catalog: FC<CatalogPropsType> = () => {
@@ -96,15 +96,17 @@ const Catalog: FC<CatalogPropsType> = () => {
                   return <li key={index}>{product.manufacturer}</li>
                 })}
               </ul>
-              <div className="show_hide_list">Смотреть все</div>
+              <div className="manufacturer__btn">Смотреть все</div>
             </div>
-            <p>Уход за телом</p>
-            <ul className="body actives">
-              {productList.map((product: any, elem: number) => {
-                return <li key={elem}>{product.for}</li>
-              })}
-            </ul>
-            <div className="show_hide_lists">Смотреть все</div>
+            <div className="care__block">
+              <p>Уход за телом</p>
+              <ul className="care actives">
+                {productList.map((product: any, elem: number) => {
+                  return <li key={elem}>{product.for}</li>
+                })}
+              </ul>
+              <div className="care__btn">Смотреть все</div>
+            </div>
           </aside>
 
           <div className='catalog'>

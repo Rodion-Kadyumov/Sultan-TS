@@ -124,7 +124,7 @@
           display: block;
         }
       
-        .show_hide_list {
+        .manufacturer__btn {
           cursor:pointer;
           background: #FFC85E;
           border-radius: 80px;
@@ -159,7 +159,9 @@
           }
         }
       }
-      ul>li {
+
+      .care__block {
+        ul>li {
           @extend %weight400 !optional;
           line-height: 150%;
           color: #3F4E65;
@@ -168,13 +170,13 @@
             display: none;
           }
         }
-        .body>li:nth-child(n+5) {
+        .care>li:nth-child(n+5) {
           display: none;
         }
         .actives>li:nth-child(n+5) {
           display: block;
         }
-        .show_hide_lists {
+        .care__btn {
           cursor:pointer;
           background: #FFC85E;
           border-radius: 80px;
@@ -183,6 +185,7 @@
           text-align:center;
           padding:10px;
         }
+      }
     }
     .catalog {
       grid-column: 2/5;
